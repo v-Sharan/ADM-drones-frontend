@@ -3,5 +3,9 @@ export default function BlogLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <section className="flex my-5 justify-center">{children}</section>;
+  return (
+    <section className="w-[70%] max-sm:w-[90%] max-md:w-[80%]">
+      {children}
+    </section>
+  );
 }

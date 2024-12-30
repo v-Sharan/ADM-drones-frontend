@@ -24,12 +24,15 @@ const Carousel = ({ images }: { images: Home[] }) => {
     setCurrentSlide((prev) => (prev === 0 ? images.length - 1 : prev - 1));
 
   return (
-    <div className="relative sm:h-[85vh] w-full" id="#home">
+    <div
+      className="relative h-[45vh] sm:h-[60vh] xl:h-[85vh] lg:h-[85vh] w-full sm:w-[60%] xl:w-[80%]"
+      id="#home"
+    >
       <AiOutlineLeft
         onClick={handlePrevSlide}
         className="absolute left-0 m-auto text-5xl inset-y-1/2 cursor-pointer text-gray-400 z-20"
       />
-      <div className="w-full h-[85vh] flex overflow-hidden relative m-auto">
+      <div className="w-full h-full flex overflow-hidden relative m-auto">
         <Swipe
           onSwipeLeft={handleNextSlide}
           onSwipeRight={handlePrevSlide}
@@ -49,7 +52,7 @@ const Carousel = ({ images }: { images: Home[] }) => {
                     src={urlFor(image.imgUrl).url()}
                     fill
                     alt={image.alt!}
-                    className="bg-white dark:bg-white/10 rounded-lg"
+                    className="bg-white dark:bg-white/10 rounded-lg h-[50vh] sm:h-[60vh] xl:h-[85vh]"
                   />
                 </motion.div>
               );
