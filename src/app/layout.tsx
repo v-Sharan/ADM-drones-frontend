@@ -25,7 +25,7 @@ export default function RootLayout({
         >
           <NextUiProvider>
             <Nav />
-            <main className="flex px-4 py-2 flex-col gap-10 justify-center bg-background">
+            <main className="flex px-4 py-2 flex-col gap-10 justify-center items-center bg-background">
               {children}
             </main>
             <Footer />

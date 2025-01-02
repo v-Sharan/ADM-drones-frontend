@@ -1,39 +1,31 @@
 "use client";
 
-import { urlFor } from "@/client";
 import { About } from "@/types/SanityResults";
 import MotionWrap from "@/wrapper/MotionWrap";
-import {
-  Card,
-  CardBody,
-  CardFooter,
-  Image as NextUIImage,
-} from "@nextui-org/react";
-import Image from "next/image";
+import { Card, CardBody } from "@nextui-org/react";
 
 const Applications = ({ services }: { services: About[] }) => {
   return (
     <>
       {services.map((item, idx) => (
-        <MotionWrap classNames="flex gap-5 flex-wrap justify-center" key={idx}>
-          <div className="flex flex-col  gap-5">
-            <h1 className="text-2xl font-bold text-primary">{item.title}:</h1>
-            <div className="flex gap-5 p-3 justify-center flex-col sm:flex-row sm:bg-white">
-              <div className="self-center w-[300px] h-[300px]">
-                <NextUIImage
-                  radius="lg"
-                  shadow="md"
-                  as={Image}
-                  src={urlFor(item.imgUrl).url()}
-                  width={300}
-                  height={300}
-                  alt={item._id}
-                  className="bg-black/20 dark:bg-white/80 cursor-pointer w-auto h-auto"
-                />
+        <MotionWrap key={idx} classNames="w-full max-w-sm mx-auto">
+          <Card
+            className="dark:bg-foreground-100 bg-white shadow-lg hover:shadow-xl transition-shadow"
+            radius="lg"
+          >
+            <CardBody className="px-5 py-3">
+              <div className="flex justify-center flex-col items-center py-4">
+                <div className="flex justify-center flex-col">
+                  <h2 className="text-2xl font-bold mb-3 text-primary text-center">
+                    {item.title}
+                  </h2>
+                  <p className="text-lg text-gray-600 mb-4 dark:text-white">
+                    {item.description}
+                  </p>
+                </div>
               </div>
-              <p className="text-xl w-[50%]">{item.description}</p>
-            </div>
-          </div>
+            </CardBody>
+          </Card>
         </MotionWrap>
       ))}
     </>

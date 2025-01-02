@@ -8,7 +8,7 @@ const Product = async ({ params }: { params: Promise<{ id: string }> }) => {
     productFindQuery((await params).id)
   );
   return (
-    <div className="flex flex-col gap-6 px-2 py-5 w-[70%] justify-center">
+    <div className="flex flex-col gap-6 px-2 py-5 justify-center">
       {product.map((item, idx) => (
         <VersionsCard key={idx} product={item} idx={`${idx}`} />
       ))}
