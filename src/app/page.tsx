@@ -11,8 +11,7 @@ const App = async () => {
     <>
       <Header images={images} />
       <h1 className="text-center font-semibold text-3xl">
-        <span className="text-primary">Our Products </span>
-        will be <span className="text-primary">Our Growth</span>
+        <p className="text-primary">Our Products will be Our Growth</p>
       </h1>
       <ProductCard products={products} />
       <MotionWrap>
