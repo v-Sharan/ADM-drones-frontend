@@ -93,6 +93,10 @@ const Footer = () => {
       </div>
       <div className="flex justify-between border-t dark:border-gray-700 border-gray-300 mt-10 px-5 py-6 text-sm text-start">
         <p>Copyright © 2024 ADM Drone PVT Ltd. All rights reserved.</p>
+        <div>
+          <p>Email: </p>
+          <p>Mobile Number:+91 9363901791</p>
+        </div>
         <Tooltip content="Contact Us" shadow="md" showArrow>
           <div className="flex items-center fixed bottom-4 right-4 z-50">
             <Button
