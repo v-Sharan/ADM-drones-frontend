@@ -3,7 +3,7 @@ import { Products } from "@/types/SanityResults";
 
 export const HeaderQuery = defineQuery(`*[_type == "home"]{imgUrl,alt,_id}`);
 
-export const HomeProductQuery = defineQuery(`*[_type == "products"][0..3]`);
+export const HomeProductQuery = defineQuery(`*[_type == "products"][0..7]`);
 
 export const ProductQuery = defineQuery(`*[_type == "products"]`);
 
