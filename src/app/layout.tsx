@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 import { NextUiProvider, ThemeProvider, Nav, Footer } from "@/components";
+import Inverset from "@/components/Inverst";
 
 export const metadata: Metadata = {
   title: "AMD Drones",
@@ -31,6 +32,7 @@ export default function RootLayout({
             <Footer />
           </NextUiProvider>
         </ThemeProvider>
+        <Inverset />
       </body>
     </html>
   );

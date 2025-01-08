@@ -41,8 +41,6 @@ const Nav = () => {
 
   const pathname = usePathname();
 
-  const [page, setPage] = useState<string>(pages[0].name.toLowerCase());
-
   const checkActivePath = (path: string) => {
     if (path === "/" && pathname !== path) {
       return false;
