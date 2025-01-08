@@ -9,8 +9,8 @@ export async function POST(request: Request) {
 
   try {
     const { data, error } = await resend.emails.send({
-      from: "Info <info@info.mspacedronetech.com>",
-      to: ["vsharansago@gmail.com", "mspacedrone@gmail.com"],
+      from: "Info <info@info.admdrones.com>",
+      to: ["admdrones@gmail.com"],
       subject: `Message From AMD-DRONES website and subject is ${subject}`,
       react: Email({ email, subject, message }) as React.ReactElement,
     });
