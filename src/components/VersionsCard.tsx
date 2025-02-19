@@ -65,6 +65,7 @@ const VersionsCard = ({ product, idx }: { product: Products; idx: string }) => {
                       height={300}
                       width={300}
                       src={item.imgUrl}
+                      objectFit="cover"
                     />
                   </div>
                   <h2>{item.versionName}</h2>
