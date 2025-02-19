@@ -5,7 +5,7 @@ import { NextUiProvider, ThemeProvider, Nav, Footer } from "@/components";
 import Inverset from "@/components/Inverst";
 
 export const metadata: Metadata = {
-  title: "AMD Drones",
+  title: "ADM Drones Pvt Ltd",
   description:
     "At ADM Drones, we specialize in manufacturing cutting-edge drone frames designed for performance and durability. Our frames are crafted from premium carbon fiber, ensuring unmatched lightweight properties and robust strength—ideal for all your aerial needs.",
 };
