@@ -79,7 +79,7 @@ const Inverset = () => {
               <a href="mailto:admdrones@gmail.com">admdrones@gmail.com</a>
             </p>
             <p>
-              Mobile: <a href="tel:+91 9363901791">+91 9363901791</a>
+              Mobile: <a href="tel:+91 9444733874">+91 9444733874</a>
             </p>
           </div>
           <button
